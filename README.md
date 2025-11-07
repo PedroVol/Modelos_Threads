@@ -1,4 +1,7 @@
 Relatorio
+
+
+
 Nesse trabalho iremos comparar dois modelos de mapeamento de threads (N:M e 1:1). O modelo 1:1 cria uma thread de sistema para cada thread de usuário, proporcionando concorrência real, mas com maior consumo de recursos. E no modelo N:M, multiplica várias threads de usuário sobre um conjunto reduzido de threads do sistema operacional, o que diminui o custo de gerenciamento e melhora a escalabilidade.
 
 No codigo o modelo N:M utiliza um pool fixo de threads com M = 8 threads reais, sendo distribuídas N tarefas de usuário. E no modelo 1:1 cada tarefa é executada em uma thread real independente.
